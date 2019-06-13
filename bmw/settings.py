@@ -68,8 +68,9 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    # 'bmw.pipelines.BmwPipeline': 300,
-    'scrapy.pipelines.images.ImagesPipeline': 1
+    # 'bmw.pipelines.BmwPipeline': 300,  # 优先级
+    # 'scrapy.pipelines.images.ImagesPipeline': 1
+    'bmw.pipelines.BMWImagesPipeline': 1
 
 }
 
