@@ -11,7 +11,7 @@ import scrapy
 class BmwItem(scrapy.Item):
     # define the fields for your item here like:
     category = scrapy.Field()
-    image_urls = scrapy.Field()
+    image_urls = scrapy.Field()  # 用来存储需要下载文件的连接，需要给一个列表
     images = scrapy.Field()
 
 
