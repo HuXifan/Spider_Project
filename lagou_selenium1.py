@@ -49,7 +49,6 @@ class LagouSpider(object):
         self.write_to_csv()  # 将获取的数据写入csv文件
 
     # 定义函数，解析列表页页面
-
     def parse_list_page(self, source):
         html = etree.HTML(source)
         # 详情页获取 链接在class标签下
